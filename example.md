@@ -1,14 +1,15 @@
 ---
 theme: ./
+layout: intro
 ---
 
-# Slidev Theme Starter
+# Amarula Theme
 
-Presentation slides for developers
+Official Amarula Solutions theme for Slidev
 
 <div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" flex="~ justify-center items-center gap-2" hover="bg-white bg-opacity-10">
-    Press Space for next page <div class="i-carbon:arrow-right inline-block"/>
+  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
+    Press Space for next page <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
@@ -16,15 +17,15 @@ Presentation slides for developers
 
 # What is Slidev?
 
-Slidev is a slide maker and presentation tool designed for developers. It includes the following features:
+Slidev is a slides maker and presenter designed for developers, consist of the following features
 
-- 📝 **Text-based** - focus on your content with Markdown, then style it later
-- 🎨 **Themable** - themes can be shared and reused as npm packages
+- 📝 **Text-based** - focus on the content with Markdown, and then style them later
+- 🎨 **Themable** - theme can be shared and used with npm packages
 - 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
+- 🤹 **Interactive** - embedding Vue components to enhance your expressions
 - 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
+- 🛠 **Hackable** - anything possible on a webpage
 
 <br>
 <br>
@@ -37,7 +38,7 @@ Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 Hover on the bottom-left corner to see the navigation's controls panel
 
-## Keyboard Shortcuts
+### Keyboard Shortcuts
 
 |     |     |
 | --- | --- |
@@ -47,15 +48,12 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>down</kbd> | next slide |
 
 ---
-layout: image-right
-image: https://cover.sli.dev
----
 
 # Code
 
 Use code snippets and get the highlighting directly!
 
-```ts
+```ts {all|2|1-6|all}
 interface User {
   id: number
   firstName: string
@@ -70,11 +68,12 @@ function updateUser(id: number, update: Partial<User>) {
 }
 ```
 
+And it nicely handles `inline` code as well.
+
 ---
-layout: center
-class: "text-center"
+layout: cover
 ---
 
 # Learn More
 
-[Documentation](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+[Source Code](https://github.com/jd-solanki/slidev-theme-dracula/blob/main/slides/example.md) / [GitHub Repo](https://github.com/jd-solanki/slidev-theme-dracula)
