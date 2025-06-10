@@ -13,8 +13,8 @@ const props = defineProps({
 
 <template>
   <div class="slidev-layout two-cols-header w-full h-full" :class="layoutClass">
-    <img src="../images/amarula-white.png" class="logo-topright" v-if="isDark" />
-    <img src="../images/amarula.png" class="logo-topright" v-else />
+    <img src="../images/logo-small-white.svg" class="logo-topright" v-if="isDark" />
+    <img src="../images/logo-small-white.svg" class="logo-topright" v-else />
     <div class="col-header">
       <slot />
     </div>
