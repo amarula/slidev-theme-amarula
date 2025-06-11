@@ -1,17 +1,12 @@
 ---
 theme: ./
-layout: intro
+layout: cover
+title: "Presentation title"
+author: Author Name
+event: Your Event
 ---
 
-# Amarula Theme
-
-Official Amarula Solutions theme for Slidev
-
-<div class="pt-12">
-  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+<!-- The content of the slide is handled by the layout -->
 
 ---
 
@@ -70,8 +65,6 @@ function updateUser(id: number, update: Partial<User>) {
 
 And it nicely handles `inline` code as well.
 
----
-layout: cover
 ---
 
 # Learn More
