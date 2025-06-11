@@ -3,6 +3,8 @@
   --slidev-theme-primary: #5d8392;
   --slidev-code-font-size: 10px;
   --slidev-code-line-height: 14px;
+
+  --amarula-orange-accent: #fdcb0e;
 }
 
 /* Dark mode overrides */
@@ -125,6 +127,10 @@ html.dark .slidev-layout {
   table + h2 {
     @apply mt-10;
   }
+}
+
+.bg-accent {
+  background-color: var(--amarula-orange-accent);
 }
 
 /* Bottom panel styling */
