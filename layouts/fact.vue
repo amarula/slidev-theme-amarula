@@ -5,7 +5,7 @@ import { isDark } from '@slidev/client/logic/dark.ts'
 <template>
   <div class="slidev-layout fact">
     <img src="../images/logo-small-white.svg" class="logo-topright" v-if="isDark" />
-    <img src="../images/logo-small-white.svg" class="logo-topright" v-else />
+    <img src="../images/logo-small-dark.svg" class="logo-topright" v-else />
     <div class="my-auto">
       <slot />
     </div>

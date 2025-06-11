@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
   <div class="slidev-layout two-columns grid grid-cols-2 w-full h-full">
     <img src="../images/logo-small-white.svg" class="logo-topright" v-if="isDark" />
-    <img src="../images/logo-small-white.svg" class="logo-topright" v-else />
+    <img src="../images/logo-small-dark.svg" class="logo-topright" v-else />
     <div class="col-left" :class="props.class">
       <slot />
     </div>
