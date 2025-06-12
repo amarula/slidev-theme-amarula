@@ -10,7 +10,11 @@ event: Your Event
 
 ---
 
-# What is Slidev?
+::title::
+
+What is Slidev?
+
+::body::
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
@@ -29,7 +33,11 @@ Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 ---
 
-# Navigation
+::title::
+
+Navigation
+
+::body::
 
 Hover on the bottom-left corner to see the navigation's controls panel
 
@@ -44,7 +52,11 @@ Hover on the bottom-left corner to see the navigation's controls panel
 
 ---
 
-# Code
+::title::
+
+Code
+
+::body::
 
 Use code snippets and get the highlighting directly!
 
@@ -67,6 +79,10 @@ And it nicely handles `inline` code as well.
 
 ---
 
-# Learn More
+::title::
+
+Learn More
+
+::body::
 
 [Source Code](https://github.com/jd-solanki/slidev-theme-dracula/blob/main/slides/example.md) / [GitHub Repo](https://github.com/jd-solanki/slidev-theme-dracula)

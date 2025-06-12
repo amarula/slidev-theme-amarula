@@ -1,26 +1,21 @@
-<script setup lang="ts">
-import { isDark } from '@slidev/client/logic/dark.ts'
+<script setup>
+import TitleRenderer from '#slidev/title-renderer'
 </script>
 
+
 <template>
-  <div class="slidev-layout default">
-    <img src="../images/logo-small-white.svg" class="logo-topright" v-if="isDark" />
-    <img src="../images/logo-small-dark.svg" class="logo-topright" v-else />
-    <div class="my-auto">
-      <slot />
+  <div class="slidev-layout flex flex-col h-full w-full p-8 space-y-8 justify-evenly">
+    <TopBar v-if="$slots.title">
+      <template #pageTitle>
+        <slot name="title" />
+      </template>
+    </TopBar>
+
+    <div class="content">
+      <slot name="body" />
     </div>
   </div>
 
-  <table class="bottompanel">
-    <tbody>
-      <tr>
-        <th style="text-align: left; padding-left: 8px">
-          <a href="https://www.amarulasolutions.com">https://www.amarulasolutions.com</a>
-        </th>
-        <th>
-          <SlideCurrentNo />
-        </th>
-      </tr>
-    </tbody>
-  </table>
+  <BottomBar>
+  </BottomBar>
 </template>
