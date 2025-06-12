@@ -13,146 +13,22 @@ html.dark .slidev-layout {
   background-color: #1e1e1e;
 }
 
-/* Logo positioning */
-.logo-topright {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 100px;
-}
-
-.logo {
-  width: 350px;
-  float: left;
-}
-
-/* Typography utilities */
-.font-small {
-  font-size: 14px;
-}
-
-.font-large {
-  font-size: 18px;
-}
-
-/* Vertical centering */
-.center {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0;
-}
-
-/* Left image block with border highlight */
-.left-image {
-  position: absolute;
-  left: 32px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 450px;
-  vertical-align: middle;
-  border: 4px solid;
-  border-image: linear-gradient(#fdcb0b, #fdcb0b) 30;
-}
-
-/* Right-aligned image content */
-.content-image-right {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  width: 50%;
-  padding: 32px;
-  margin: auto 0;
-  vertical-align: middle;
-}
-
-/* Slide-specific layouts */
-.slidev-layout.cover {
-  text-align: end;
-}
-
-.slidev-layout.section {
-  background-color: #1e1e1e;
-  text-align: end;
-  align-items: center;
-
-  h1 {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    padding: 32px;
-    font-size: 42px;
-    font-weight: bolder;
-    color: #fdcb0b;
-    text-align: end;
-  }
-
-  img {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    transform: translateY(-50%);
-    width: 450px;
-    vertical-align: middle;
-    border: 4px solid;
-    border-image: linear-gradient(#fdcb0b, #fdcb0b) 30;
-  }
-}
-
-/* Cover and intro layout typography */
-.slidev-layout.cover,
-.slidev-layout.intro {
-  @apply h-full grid;
-
-  h1 {
-    @apply text-6xl font-bold text-yellow-400;
-  }
-
-  h2 {
-    @apply text-2xl font-bold;
-  }
-
-  h3 {
-    @apply text-base font-light;
-  }
-
-  h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
-  }
-
-  p + h2,
-  ul + h2,
-  table + h2 {
-    @apply mt-10;
-  }
-}
-
 .bg-accent {
   background-color: var(--amarula-orange-accent);
 }
 
-/* Bottom panel styling */
-.bottompanel {
+.bottom-bar {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 24px;
   width: 100%;
-  padding: 4px 16px;
+  padding: 0px 8px;
   font-size: 12px;
   color: black;
-  background-color: #fdcb0b;
-
-  th {
-    font-weight: 400;
-  }
-}
-
-/* Basic list styling */
-ul,
-li {
-  list-style-type: disc;
+  background-color: var(--amarula-orange-accent);
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
