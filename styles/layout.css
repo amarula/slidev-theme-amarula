@@ -17,6 +17,16 @@ html.dark .slidev-layout {
   background-color: var(--amarula-orange-accent);
 }
 
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  width: 100%;
+  margin: 8px 4px;
+}
+
 .bottom-bar {
   position: absolute;
   bottom: 0;
