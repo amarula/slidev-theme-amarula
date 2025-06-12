@@ -17,6 +17,9 @@ function getTitleSizeClass(title = '') {
 function getDividerWidthClass(title = '') {
   return title.length > TITLE_LONG ? 'w-4' : 'w-2'
 }
+
+const logoDark = new URL('../assets/logo-small-dark.svg', import.meta.url).href
+const logoWhite = new URL('../assets/logo-small-white.svg', import.meta.url).href
 </script>
 
 <template>
@@ -31,7 +34,7 @@ function getDividerWidthClass(title = '') {
     <div class="flex flex-row justify-center items-center space-x-16">
 
       <!-- Logo -->
-      <img :src="isDark ? '../images/logo-small-white.svg' : '../images/logo-small-dark.svg'" class="w-64"
+      <img :src="isDark ? logoWhite : logoDark" class="w-64"
         alt="Amarula Logo" />
 
       <!-- Divider -->

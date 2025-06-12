@@ -2,11 +2,14 @@
 import { useDarkMode } from '@slidev/client'
 
 const { isDark } = useDarkMode()
+
+const logoDark = new URL('../assets/logo-small-dark.svg', import.meta.url).href
+const logoWhite = new URL('../assets/logo-small-white.svg', import.meta.url).href
 </script>
 
 <template>
     <div class="top-bar flex flex-row space-x-8 items-end">
-        <img :src="isDark ? '../images/logo-small-white.svg' : '../images/logo-small-dark.svg'"
+        <img :src="isDark ? logoWhite : logoDark"
             class="w-16 ml-4" alt="Amarula Logo" />
 
         <div class="w-full flex-col">

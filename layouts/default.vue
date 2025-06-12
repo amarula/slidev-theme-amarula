@@ -1,7 +1,5 @@
 <script setup>
-import TitleRenderer from '#slidev/title-renderer'
 </script>
-
 
 <template>
   <div class="slidev-layout flex flex-col h-full w-full p-8 space-y-8 justify-evenly">
