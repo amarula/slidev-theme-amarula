@@ -1,30 +1,15 @@
 # slidev-theme-amarula
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-amarula?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-amarula)
-
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
-
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/guide/write-theme.html
---->
-
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+Amarula Solutions theme for [Slidev](https://github.com/slidevjs/slidev).
 
 ## Install
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+Clone as submodule the `slidev-theme-amarula` inside your Slidev presentation.
+
+Then add the following frontmatter to your `slides.md`.
 
 <pre><code>---
-theme: <b>amarula</b>
+theme: <b>./slidev-theme-amarula</b>
 ---</code></pre>
 
 Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
@@ -33,18 +18,41 @@ Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-them
 
 This theme provides the following layouts:
 
-> TODO:
+### Cover
 
-## Components
+![sc-cover](screenshot/1.png)
 
-This theme provides the following components:
+| **Parameter** | **Type**                          | **Default**                       | **Notes**                                              |
+| ------------- | --------------------------------- | --------------------------------- | ------------------------------------------------------ |
+| `title`       | `string`                          | `''` (empty string)               | Title of the presentation                              |
+| `author`      | `string`                          | `''` (empty string)               | Authors of the presentation                            |
+| `event`       | `string`                          | `''` (empty string)               | Event where the presentation is showed                 |
 
-> TODO:
+### Default
+
+![sc-cover](screenshot/2.png)
+
+This is the layout with a top and bottom bars and the company logo left to the title,
+trying to give a structured approach to displaying slide information consistently across the presentation..
+
+To achieve this rendering the slide page must be created as follow:
+
+```md
+---
+
+::title::
+
+Page Title
+
+::body::
+
+Page Body
+```
 
 ## Contributing
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
+- `pnpm install`
+- `pnpm dev` to start theme preview of `example.md`
 - Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+- `pnpm export` to generate the preview PDF
+- `pnpm screenshot` to generate the preview PNG
